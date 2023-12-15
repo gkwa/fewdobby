@@ -15,10 +15,9 @@ func Main() int {
 }
 
 func run() {
-	// Instantiate default collector
 	c := colly.NewCollector(
-		// Visit only domains: hackerspaces.org, wiki.hackerspaces.org
-		colly.AllowedDomains("hackerspaces.org", "wiki.hackerspaces.org"),
+		colly.AllowedDomains("gopro.com"),
+		colly.UserAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"),
 	)
 
 	// On every a element which has href attribute call callback
@@ -36,6 +35,6 @@ func run() {
 		fmt.Println("Visiting", r.URL.String())
 	})
 
-	// Start scraping on https://hackerspaces.org
-	c.Visit("https://hackerspaces.org/")
+	// start scripting here
+	c.Visit("https://gopro.com/en/us/shop/cameras/hero12-black/CHDHX-121-master.html")
 }

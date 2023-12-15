@@ -5,6 +5,7 @@ import (
 	"log/slog"
 
 	"github.com/gocolly/colly"
+	"github.com/gocolly/colly/debug"
 )
 
 func Main() int {
@@ -16,6 +17,7 @@ func Main() int {
 
 func run() {
 	c := colly.NewCollector(
+		colly.Debugger(&debug.LogDebugger{}),
 		colly.AllowedDomains("gopro.com"),
 		colly.UserAgent("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"),
 	)

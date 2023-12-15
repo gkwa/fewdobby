@@ -1,0 +1,7 @@
+* fewdobby
+
+This is a description of my fewdobby.
+
+** Usage
+
+To use my project, run this command: ./fewdobby --verbose

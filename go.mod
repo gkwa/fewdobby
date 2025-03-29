@@ -3,8 +3,8 @@ module github.com/taylormonacelli/fewdobby
 go 1.21.1
 
 require (
-	github.com/gocolly/colly/v2 v2.1.0
-	github.com/gocolly/colly/v2 v2.1.0
+	github.com/gocolly/colly/v2 v2.2.0
+	github.com/gocolly/colly/v2 v2.2.0
 	github.com/taylormonacelli/goldbug v0.0.6
 )
 
